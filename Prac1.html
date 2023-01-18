@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position: fixed;
+  top: 0%;
+  
+  width: 100%;
+  
+  margin-bottom: 5px;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.profileblock {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: lightgray;
+    border-width: 5px;
+}
+.heroSection{
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.herosectionDetails{
+  text-align: center;
+}
+
+.herosectionDetails > h1{
+  font-size: 50px;
+  margin: 10px;
+}
+
+.aboutMe{
+  margin: 1rem;
+  text-align: center;
+}
+/* .skillsAndProjects{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: [one] 50% [two] 50%;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2rem);
+} */
+
+.connect {
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.h3 {
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Projects</a>
+  <a href="#contact">Contact Me</a>
+</div>
+
+<div class="profileblock">
+<section class='heroSection'>
+    <img 
+    class='profileImage'
+    src='./download-removebg-preview.png'/>
+    <div class='herosectionDetails'>
+        <h1>Yagna Patel</h1>
+        <h3>ICT Ganpat University</h3>
+      </div>
+  </section>
+  <section class='aboutMe' id='aboutMe'>
+    <h1>Hey Guys!!</h1>
+    <p>I'm tech Enthusiast.I'm in 2 year pursuring Btech.Right now I'm studing Front-End technologies.I already know HTML and CSS and I'm willing to learn javascript</p>
+  </section>
+  <section class='skillsAndProjects'>
+    
+    <div class='projects' id='projects'>
+      <h1 class='cardHeading'>Projects</h1>
+      <div class='projectContainer'>
+        <div class='projectDescription'>
+
+          <h4>1. Age and Birthdate Calculator</h4>
+          <p>This project was my first project in c++ it can calculate number of days a person lived,difference of age between two people and also days left for your next birthday! </p>
+        </div>
+      </div>
+      <div class='projectContainer'>
+        <div class='projectDescription'>
+          <h4>2. Employee-Management-System</h4>
+          <p>This was my first project and it helps us to store and manipulate Employee data.</p>
+          </div>
+      </div>
+      <div class='projectContainer'>
+        <div class='projectDescription'>
+          <h4>3. Web-application for Data Management</h4>
+          <p>This was my first project in java and with the help of jdbc and programming skills I made a complete software for Data Management.</p>
+           </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="connect">
+    <h3 class="h3">Connect with me</h3>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</body>
+</html>
