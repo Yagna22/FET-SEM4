@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Verify() {
+            let num = document.getElementById('vaccine');
+            let n = num.value;
+            if(n < 1)
+            {
+                alert("you are not eligible for this request");
+                return;
+            }
+            else {
+                alert("you request has been noted");
+                alert("you have sucessfully entered the site");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" >
+        <label for="fname">Enter your nationality :</label><br>
+        <input type="text" id="fname" name="fname" value="India"><br>
+        <label for="vaccine">How many times you have taken :</label><br>
+        <input type="number" id="vaccine" name="vaccine" value="0"><br><br>
+        <input type="submit" value="Submit" onclick="Verify()">
+      </form>
+</body>
+</html>
