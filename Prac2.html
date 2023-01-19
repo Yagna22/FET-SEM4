@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        top: 0%;
+        margin: 0%;
+        background-color: black;
+        color: white;
+    }
+    
+    .topnav {
+  position: fixed;
+  top: 0%;
+  margin: 0%;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: rgb(32, 30, 30);
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  color: aqua;
+}
+
+.topnav a.active {
+  background-color: darkorchid;
+  color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color:aqua;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(24, 22, 22);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* .dropdown-content a:hover {
+  background-color: #ddd;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.home {
+    display: flex;
+    background-image: url(./wp7937665-music-minimalist-wallpapers.png);
+    margin-top: 3%;
+    height: 26em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+} 
+.welcome {
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.songs > a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: goldenrod;
+  
+  
+}
+
+.images {
+       height: 600px;
+       width: 1000px;
+       margin-top: 18px;
+       margin-bottom: 50px;
+       margin-left: 15px;
+       
+}
+
+/* .songs {
+background-color: black;
+} */
+h1 {
+  font-size: 60px;
+}
+.bollywood, .rap, .indie, .country {
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center;
+}
+      textarea {
+
+width: 95.5%;
+height: 90px;
+padding: 2%;
+font: 1.4em/1.6em cursive;
+background-color: rgb(201, 83, 201);
+border: 1px solid black;
+}
+/* ::-webkit-scrollbar {
+width: 18px;
+}
+ ::-webkit-scrollbar-thumb {
+background: black;
+} 
+::-webkit-scrollbar-track {
+background:  black;
+border-left: 1px solid black;
+}
+::-webkit-resizer {
+background: black;
+}  */
+::-webkit-scrollbar-track {
+background:  rgb(24, 20, 20);
+border-left: 1px solid black;
+}
+::-webkit-scrollbar {
+width: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(201, 83, 201);
+}
+
+.button {
+  background-color: black;
+  border-style: solid;
+  border-color: rgb(201, 83, 201);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font: 1.4em/1.6em cursive;
+  border-radius: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+  <a class="active" href="#">Home</a>
+  <a href="#bollywood">Bollywood</a>
+  <div class="dropdown">
+    <button class="dropbtn">Genre 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#rap">Rap</a>
+      <a href="#indie">Indie</a>
+      <a href="#country">Country</a>
+    </div>
+  </div> 
+</div>
+<div class="home">
+    <div class="welcome">
+      Welcome to XYZ!!
+      <hr>
+      <br>
+      Go to Navigation bar for more information.
+    </div>
+</div>
+<div class="bollywood" id="bollywood">
+  <h1>Popular Bollywood Songs!</h1>
+  <br><br>
+  <div class="songs">
+   <a href="https://www.youtube.com/watch?v=jpYkoa-uE_c"> 1. Jehda Nasha: An Action Hero | Ayushmann, Nora Fatehi | Tanishk Faridkot Amar IP Singh Yohani Harjot
+    <br> <img src="./jehdanasha.jpg" alt="" class="images">
+   </a>
+   <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=BddP6PYo2gs">
+     2.Kesariya - Brahmāstra | Ranbir Kapoor | Alia Bhatt | Pritam | Arijit Singh | Amitabh Bhattacharya
+    <br> <img src="./kesariya.jpg" alt="" class="images">
+    </a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=VuG7ge_8I2Y">
+    3. Maan Meri Jaan | Official Music Video | Champagne Talk | King
+    <br><img src="./maanmerijaan.jpg" alt="" class="images">
+  </a>
+  <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=gvyUuxdRdR4">
+    4. Raataan Lambiyan | Official Video | Shershaah | Sidharth | Kiara | Tanishk B| Jubin Nautiyal |Asees
+    <br>
+    <img src="./raataan.jpg" alt="" class="images">
+    </a>
+    <br>
+    <br> 
+    <a href="https://www.youtube.com/watch?v=huxhqphtDrM">
+
+    5. Besharam Rang Song | Pathaan | Shah Rukh Khan, Deepika Padukone | Vishal & Sheykhar | Shilpa, Kumaar
+    <br> <img src="./rang.jpg" alt="" class="images">
+    </a>
+    <br>
+    <br>
+    <h3>More Coming soon...</h3>
+    <hr>
+    <br>
+  </div>
+</div>
+<div class="rap" id="rap">
+  <h1>Famous Rap songs!</h1>
+  <br>
+  <div class="songs">
+    <a href="https://youtu.be/XbGs_qK2PQA"> 1. Rap God | Eminem
+  <br> <img src="./rapgod.jfif" alt="" class="images">
+ </a>
+ <br>
+  <br>
+  <a href="https://youtu.be/YVkUvmDQ3HY">
+   2.Eminem - Without Me (Official Music Video)
+  <br> <img src="./withoutme.jpg" alt="" class="images">
+  </a>
+  <br>
+  <br>
+  <a href="https://youtu.be/pXRviuL6vMY">
+  3. twenty one pilots: Stressed Out [OFFICIAL VIDEO]
+  <br><img src="./stressedout.jpg" alt="" class="images">
+</a>
+<br>
+  <br>
+  <a href="https://youtu.be/7wtfhZwyrcc">
+  4. Imagine Dragons - Believer (Official Music Video)
+  <br>
+  <img src="./believer.jpg" alt="" class="images">
+  </a>
+  <br>
+  <br> 
+  <a href="https://youtu.be/kJQP7kiw5Fk">
+
+  5. Luis Fonsi - Despacito ft. Daddy Yankee
+  <br> <img src="./despacito.jpg" alt="" class="images">
+  </a>
+  <br>
+  <br>
+  <h3>More Coming soon...</h3>
+  <hr>
+  </div>
+</div>
+
+<div class="indie" id="indie">
+  <h1>Famous Indie songs!</h1>
+  <br>
+  <div class="songs">
+    <a href="https://youtu.be/syFZfO_wfMQ"> 1. One Direction - Night Changes
+  <br> <img src="./nightchanges.jpg" alt="" class="images">
+ </a>
+ <br>
+  <br>
+  <a href="https://youtu.be/tt2k8PGm-TI">
+   2.ZAYN - Dusk Till Dawn (Official Video) ft. Sia
+  <br> <img src="./dusktilldawn.jpg" alt="" class="images">  
+</a>
+<br>
+  <br>
+  <a href="https://youtu.be/OPf0YbXqDm0">
+  3. Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars
+  <br><img src="./uptownfunk.jfif" alt="" class="images">
+</a>
+<br>
+  <br>
+  <a href="https://youtu.be/lY2yjAdbvdQ">
+  4. Shawn Mendes - Treat You Better
+  <br>
+  <img src="./treatyoubetter.jpg" alt="" class="images">
+  </a>
+  <br>
+  <br> 
+  <a href="https://youtu.be/ALZHF5UqnU4">
+
+  5. Marshmello - Alone (Official Music Video)
+  <br> <img src="./alone.jpg" alt="" class="images">
+  </a>
+  <br>
+  <br>
+  <h3>More Coming soon...</h3>
+  <hr>
+  </div>
+</div>
+
+<div class="country" id="country">
+  <h1>Famous Country songs!</h1>
+  <br>
+  <div class="songs">
+    <a href="https://youtu.be/x8Mc8Pbl06g"> 1. Luke Combs - The Kind of Love We Make (Official Music Video)
+  <br> <img src="./thekindoflove.jfif" alt="" class="images">
+ </a>
+ <br>
+  <br>
+  <a href="https://youtu.be/d1yKrnPHAmo">
+  2. Bailey Zimmerman - Fall In Love (Official Music Video)
+  <br> <img src="./fallinlove.jfif" alt="" class="images">
+  </a>
+  <br>
+  <br>
+  <a href="https://youtu.be/lA8F9sIhGdg">
+  3. Zach Bryan - Something In The Orange
+  <br><img src="./orange.jfif" alt="" class="images">
+</a>
+<br>
+  <br>
+  <a href="https://youtu.be/n4Z1cpdkgQU">
+  4. Jelly Roll - Son Of A Sinner (Official Music Video)
+  <br>
+  <img src="./sinner.jfif" alt="" class="images">
+  </a>
+  <br>
+  <br> 
+  <a href="https://youtu.be/WVi93FwdOAc">
+
+  5. Tyler Braden - Try Losing One (Official Music Video)
+  <br> <img src="./trylosingone.jfif" alt="" class="images">
+  </a>
+  <br>
+  <br>
+  <h3>More Coming soon...</h3>
+  <hr>
+  </div>
+</div>
+  <div class="comment">
+  <textarea name="comments" id="comments">
+    Hey... Give us some feedback!
+    </textarea>
+    <input type="submit" class="button" value="Submit">
+</div>
+</body>
+</html>
